@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.scrollup {
+    /* Start Scroll UP */
+    background-color: cadetblue;
+    padding: 2vh;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+    cursor: pointer;
+    /* End Scroll UP */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* * Start of Navigation bar */
+
+nav p {
+    font-size: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+#blink {
+    animation: blink 0.5s step-end infinite alternate;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/* TODO: Uppersize Logo, scroll to Top, Make it Sidebar! */
+
+nav,
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    height: 7vh;
+    background-color: aliceblue;
+}
+
+nav ul li {
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    transition: ease-in 0.18s;
+}
+
+nav ul li a {
+    padding: 1vh;
+    margin: 0vh 1vh 0vh 1vh;
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+}
+
+li.list_bar:hover {
+    background-color: bisque;
+}
+
+
+/* * End of Navigation bar */
+
+li {
+    list-style-type: none
+}
+
+
+/* * FONT STYLE */
+
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
